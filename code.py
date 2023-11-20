@@ -58,7 +58,6 @@ def subjectivity_score(negative_score, positive_score, article_text_exclude_stop
     return value_ss
                                    
 def main():
-
     xlsx_df=read_input("Input.xlsx")
     for index, row in xlsx_df.iterrows():
             print(row)
