@@ -1,6 +1,10 @@
 # Web Scraping and Sentiment Analysis Tool
 
 This Python script uses web scraping techniques and sentiment analysis to extract and analyze the content of articles from specified URLs. It uses the requests library to fetch HTML content, BeautifulSoup for parsing, and various Natural Language Processing (NLP) techniques to analyze sentiment.
+- Positive Score: This score is calculated by assigning the value of +1 for each word if found in the Positive Dictionary and then adding up all the values.
+- Negative Score: This score is calculated by assigning the value of -1 for each word if found in the Negative Dictionary and then adding up all the values. We multiply the score with -1 so that the score is a positive number.
+- Polarity score: Lies between [-1,1], where -1 refers to negative sentiment and +1 refers to positive sentiment. 
+- Subjectivity score: Lies between [0,1]. It quantifies the amount of personal opinion and factual information contained in the text. Higher subjectivity score means that the text contains personal opinion rather than factual information.
 
 Features:
 1. Input Data: Reads input data from an Excel file (Input.xlsx) containing URLs to articles.

@@ -73,7 +73,6 @@ def main():
             negative_score, positive_score= positive_negative_score("MasterDictionary/negative-words.txt", "MasterDictionary/positive-words.txt", article_text_exclude_stop ) 
             polarity_score= polarity_score(negative_score,positive_score )
             subjectivity_score= subjectivity_score(negative_score,positive_score,article_text_exclude_stop)      
-            print("Excluded Stop Words from Article Text:", article_text_exclude_stop)
             print("Negative Score:", negative_score)
             print("Positive Score:", positive_score)
             print("Polarity Score:", polarity_score)
